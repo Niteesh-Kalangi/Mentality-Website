@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name ="keywords" content ="HTML,CSS,JSS"/>
+    <meta name="description" content="Keep back the Problems"/>
+
+    <link href="../../../../style.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="../../../../images/favicon.ico" >
+    
+    <title>Stress Problem Hunt</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inconsolata:wght@300&family=Satisfy&display=swap');
+      body.background {
+        background-color: blue;
+        font-family: 'Dosis', sans-serif;
+      }
+
+      div.game-container {
+        width: 90%;
+        left:5%;
+        right:5%;
+        top:10%;
+        bottom:95%;
+        height:650px;
+        background-image: url("../../../../short-term/Arcade/assets/Grass.jpg");
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: 100% 100%;
+        border: 10px solid black;
+        overflow: hidden;
+      }
+
+      div.cow {
+        background-image: url("../../../../short-term/Arcade/assets/Cow.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        background-size: 100% 100%;
+        width: 150px;
+        height: 150px;
+      }
+
+      .animate {
+        animation-name: run;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes run {
+        0% {
+          left: -20%;
+        } 100% {
+          left: 101%;
+        }
+      }
+
+      p.typeb {
+              position: absolute;
+              font-size: 100px;
+              top: 650px;
+              color: red;
+              left: 36.5%;
+            }
+
+            p.typec {
+              position: absolute;
+              top: 815px;
+              color: red;
+              font-size: 50px;
+            }
+
+            div.instruct {
+              text-align: center;
+            }
+
+    </style>
+    
+  </head>
+
+  <body class="background">
+
+    <div class="topnav-container">
+            <div class="topnav">
+                <a href="../ArcadeMenu.html">Return to Arcade Menu</a>
+            </div>
+    </div>
+
+    <div class = "game-container" id="thisisthething">
+
+      <div id="one" class="cow animate" style="top:250px" onclick = "redo()"></div>
+      <div id="two" class="cow animate" style="top:375px"></div>
+      <div id="three" class="cow animate" style="top:500px"></div>
+
+    </div>
+
+    <div class = "instruct">
+      <p class = "typeb">Instructions</p>
+      <p class = "typec">
+              In order to win this game, you must keep as many cows as possible from reaching the end. 
+      </p>
+    </div>
+
+    <script>
+
+      var thing = document.getElementById("one");
+      var container = document.getElementById("thisisthething");
+
+      document.addEventListener('click', function(event) {
+        if (event.target.classList.contains("cow")) {
+          event.target.remove();
+          var div = document.createElement('div');
+          div.classList.add('cow');
+          div.style.left = "0px";
+          container.appendChild(div);
+          div.style.top = event.target.style.top;
+          div.classList.add('animate');         
+        }
+      });
+
+    </script>
+
+  </body>
+
+</html>

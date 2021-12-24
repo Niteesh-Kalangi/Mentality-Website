@@ -1,0 +1,210 @@
+/*pretty much taken content from other stylesheets but easier this way so*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inconsolata:wght@300&family=Satisfy&display=swap');
+
+body {
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+  border-color: white;
+  color:white;
+}
+
+.breathing {
+    background: url("short-term/breathing-pages/background2.jpg");
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meditation {
+  background: url("long-term/meditation-pages/meditation-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exercise-diet {
+    background: url("long-term/exercise-diet-pages/nature3.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.yoga {
+    background: url("long-term/yoga-pages/background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:black;
+}
+
+.general {
+    background: url("long-term/general-tips-pages/ocean.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:black;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /*blur the image*/
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: 2;
+  
+}
+
+/* Position the navbar container inside the image */
+
+.topnav-container {
+  /* The image used */
+  min-height: 20px;
+  color: white;
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  background-color: rgba(139,175,209,1);
+  position: fixed;
+  /*margin: 20px;*/
+  /*border-radius: 10px;*/
+  /*height: 35px;*/
+  width: 100%;
+  z-index: 1;
+  border-bottom: 2px solid white;
+}
+
+
+.topnav a {
+   float: center;
+   color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 40px;
+  padding-top:50%;
+}
+
+.topnav a:hover {
+  text-decoration: underline 2px;
+}
+
+.topnav img{
+  float: right;
+  width: 60px;
+  height:60px;
+  padding-right: 20px;
+  /*But do you like it yeah its cool?*/
+}
+.topnav2 img{
+  float: right;
+  width:60px;
+  height:60px;
+  padding-right: 20px;
+  
+}
+.fullpage{
+  display: flex;
+  padding-top:50px;
+  z-index: 1;
+  height:76%;
+}
+
+.section1{
+  margin:30px;
+  margin-top: 0px;
+  min-width:40%;
+  max-width: 50%;
+  padding-top: 60px;
+}
+.section1 img{
+  max-width:100%;
+  max-height:100%;
+  min-width: 75%;
+  
+}
+
+.section2{
+  margin-right:5%;
+}
+
+.title-box {
+  border: 2px solid;
+  text-align: center;
+  font-size: 50px;
+}
+
+.image-box {
+  margin-top: 12%;
+  border: 2px solid;
+  text-align: center;
+}
+
+.info-box {
+  margin-top: 5%;
+  margin-left: 11%;
+  height: 76%;
+  
+  font-size: 20px;
+}
+
+.info-box p {
+  padding: 1%;
+}
+.nextprevbuttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 30px auto;
+    padding-top: 40px;
+}
+.nextprevbuttons a {
+    padding: 10px 60px;
+    background: #1226d4;
+    display: inline-block;
+    font-size:40px;
+    margin: 20px auto;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.pagelinkbuttons{
+  padding: 40px;
+}
+
+.pagelinkbuttons ul{
+    display: flex;
+    flex-direction:row;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.pagelinkbuttons ul a {
+    display: block;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    width: 125px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+

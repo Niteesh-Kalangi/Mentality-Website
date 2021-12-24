@@ -1,0 +1,251 @@
+	@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inconsolata:wght@300&family=Satisfy&display=swap');
+
+    html{
+      margin:0;
+      height:100%;
+    }
+    * {
+    margin-top: 0;
+}
+    body {
+			background: url(../../../images/smoothbackground.jpeg)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    color:white;
+    font-family: 'Dosis', sans-serif;
+    height:100%;
+    width:100%;
+    margin:0;
+		}
+    .topnav-container {
+  /* The image used */
+  margin-top:0;
+  
+  color:black;
+
+
+  /* Center and scale the image nicely */
+
+
+  /* Needed to position the navbar */
+  background-color: rgba(139,175,209,1);
+  position: fixed;
+  /*margin: 20px;*/
+  /*border-radius: 10px;*/
+  /*height: 35px;*/
+  width: 100%;
+  
+  z-index: 1
+}
+
+.topnav-container2 {
+  /* The image used */
+  background-image: url("images/mountainBackgrounds.png");
+
+  min-height: 20px;
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  background-color: rgba(139,175,209,0);
+  position: fixed;
+  /*margin: 20px;*/
+  /*border-radius: 10px;*/
+  /*height: 35px;*/
+  width: 100%;
+  z-index: 1;
+  border-bottom: 2px solid;
+}
+
+.topnav img{
+  float: right;
+  width: 60px;
+  height:60px;
+  padding-right: 20px;
+  /*But do you like it yeah its cool?*/
+}
+.topnav2 img{
+  float: right;
+  width:60px;
+  height:60px;
+  padding-right: 20px;
+  
+}
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  z-index: inherit;
+ align-content: center;
+ /*padding-top:20px;*/
+  
+}
+
+/* Navbar links */
+.topnav a {
+  float: center;
+  color: #000000;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 40px;
+  padding-top:50%;
+  
+}
+
+.topnav a:hover {
+  text-decoration: underline 2px;
+}
+
+.gridContainer{
+  padding-top:1%;
+}
+.row1{
+  background: none;
+  padding: 40px;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  list-style-type: none;
+  gap:100px;
+}
+.row1game{
+  float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 60px;
+    width: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 5px;
+    box-shadow: 0px 3px 8px 0px rgb(0 0 0 / 21%), 0px 5px 20px 0px rgb(0 0 0 / 20%);
+    transition: all 0.35s cubic-bezier(.24, .8, .24, 1);
+}
+.row1game:hover{
+  opacity: 0.8;
+}
+.row2{
+  background: none;
+  padding: 40px;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  list-style-type: none;
+  gap:100px;
+}
+.row2game{
+  float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 60px;
+    width: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 5px;
+    box-shadow: 0px 3px 8px 0px rgb(0 0 0 / 21%), 0px 5px 20px 0px rgb(0 0 0 / 20%);
+    transition: all 0.35s cubic-bezier(.24, .8, .24, 1);
+}
+.row2game:hover{
+  opacity: 0.8;
+}
+#upperLeft{
+    background: 
+    linear-gradient(
+      rgba(0, 0,0,0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../assets/Game3Preview.png) no-repeat;
+  
+    background-size: cover;
+    border-radius: 10px;
+}
+#upperRight{
+    background: linear-gradient(
+      rgba(0, 0,0,0.25),
+      rgba(0, 0, 0, 0.25)
+    ), url(../assets/Game1Preview.png) no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#lowerLeft{
+    background: linear-gradient(
+      rgba(0, 0,0,0.25),
+      rgba(0, 0, 0, 0.25)
+    ), url(../assets/Game2Preview.png) no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+#lowerRight{
+    background: linear-gradient(
+      rgba(0, 0,0,0.25),
+      rgba(0, 0, 0, 0.25)
+    ), url(../assets/Game4Preview.png) no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+    /*
+    .gridContainer a{
+      text-decoration: none;
+      color: white;
+      font-style: bold;
+      margin-top:50%;
+      align-content: center;
+    }
+    .upperLeft{
+      background-image: url("../assets/Game3Preview.png");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+      text-align: center;
+      color: blue;
+			font-size: 70px;
+      height:300px;
+      padding:100px;
+      text-decoration:none;
+    }
+    .upperRight{
+      background-image: url("../assets/Game1Preview.png");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+      text-align: center;
+      color: blue;
+			font-size: 70px;
+      height:300px;
+      
+      text-decoration:none;
+    }
+    .lowerLeft{
+      background-image: url("../assets/Game2Preview.png");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+      text-align: center;
+      color: blue;
+			font-size: 70px;
+      height:300px;
+      padding:100px;
+      text-decoration:none;
+    }
+    .lowerRight{
+      background-image: url("../assets/Game4Preview.png");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+      text-align: center;
+      color: blue;
+			font-size: 70px;
+      height:300px;
+      padding:100px;
+      text-decoration:none;
+    }
+  */

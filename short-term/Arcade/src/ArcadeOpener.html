@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name ="keywords" content ="HTML,CSS,JSS"/>
+        <meta name="description" content="The Arcade for the award winning Anxiety Releif Website"/>
+
+        <link href="../../../style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="../../../images/favicon.ico" >
+
+        <title>Stress Relief Arcade Gateway</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inconsolata:wght@300&family=Satisfy&display=swap');
+            body.ArcadeIntroBackground {
+                background-color: skyblue;
+                font-family: 'Dosis', sans-serif; 
+            }
+
+            div.InBackOf {
+                position: absolute;
+                //top: 7.5%; //flag
+            }
+
+            div.InFrontOf {
+                position: relative;
+            }
+
+            div.Position1 {
+                top:325px;
+                left:330px;
+            }
+
+            div.Rotated {
+                transform: rotate(10deg);
+            }
+
+            button.CustomButton1 {
+                border: none;
+                position:absolute;
+                right:90px;
+                top: 250px;
+                background-color: yellow;
+                padding: 30px 30px;
+                cursor: pointer;
+                color: black;
+                border: 5px solid;
+                transition-duration: 0.4s;
+                display: inline-block;
+                text-align: center;
+            }
+
+            button.CustomButton1.HoverEffect {
+                color: black;
+                background-color: yellow;
+            }
+
+            button.CustomButton1.HoverEffect:hover {
+                color: yellow;
+                background-color: black;
+            }
+
+
+            h1.alpha {
+                font-size: 80px; //flag
+            }
+
+        </style>
+
+    </head>
+
+  <body class = "ArcadeIntroBackground">
+
+      <div class="topnav-container">
+			  <div class="topnav">
+				  <a href="../../../index.html">Home</a>
+				  <a href="../../../visualizations.html">Visualizations</a>
+				  <a href="../../../solutions.html">Solutions</a>
+				  <a href="../../../about.html">About</a>
+			  </div>
+		  </div>
+
+        <div class = "InBackOf">
+            <img src="../../Arcade/assets/Arcade_Machine.png" alt="Error 34: Image Can Not Be Displayed" width="800px" height="800px" style="float:left"/> <!-- flag -->
+        </div>
+
+        <div class = "InFrontOf Position1 Rotated">
+            <img src="../../Arcade/assets/SimonBot.png" alt="Error 38: Image Can Not Be Displayed" width="150px" height="150px" style="float:left"/> <!-- flag -->
+        </div>
+
+        <button class="CustomButton1 HoverEffect" onclick="window.location.href='ArcadeMenu.html'"> <!-- flag -->
+            <h1 class = "alpha">GO TO ARCADE!</h1>
+        </button>
+
+        
+
+  </body>
+
+</html>

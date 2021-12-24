@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name ="keywords" content ="HTML,CSS,JSS"/>
+        <meta name="description" content="Click the Buttons"/>
+
+        <link href="../../../../style.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="../../../../images/favicon.ico" >
+
+    <title>Stress Click Race</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inconsolata:wght@300&family=Satisfy&display=swap');
+      body.main {
+        background-color: maroon;
+        font-family: 'Dosis', sans-serif;
+      }
+
+      div.game-container {
+        width: 90%;
+        left:5%;
+        right:5%;
+        top:10%;
+        bottom:95%;
+        height:650px;
+        background-image: url("../../../../short-term/Arcade/assets/Galaxy.jpg");
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: 100% 100%;
+        border: 10px solid black;
+        overflow: hidden;
+      }
+
+      button.click-me {
+        position:absolute;
+        background-color: yellow;
+        cursor: pointer;
+        color: black;
+        transition-duration: 0.4s;
+        left: 45%;
+        top: 45%;
+        //display: inline-block;
+        //text-align: center;
+      }
+
+      button.click-me.HoverEffect {
+        color: black;
+        background-color: yellow;
+      }
+
+      button.click-me.HoverEffect:hover {
+        color: yellow;
+        background-color: black;
+      }
+
+      p.typeb {
+        position: absolute;
+        font-size: 100px;
+        top: 650px;
+        color: blue;
+        left: 36.5%;
+      }
+
+      p.typec {
+        position: absolute;
+        top: 815px;
+        color: blue;
+        font-size: 50px;
+        left: 300px;
+      }
+
+      div.instruct {
+        text-align: center;
+      }
+
+    </style>
+
+  </head>
+
+  <body class="main">
+
+    <div class="topnav-container">
+            <div class="topnav">
+                <a href="../ArcadeMenu.html">Return to Arcade Menu</a>
+            </div>
+    </div>
+
+    
+
+    <div class = "game-container">
+
+        <button id="thisOne" class = "click-me HoverEffect" onclick = "regenerate()" padding = "30px 30px" border = "5px solid"><h1>Click Me</h1></button>
+
+    </div>
+
+    <div class = "instruct">
+            <p class = "typeb">Instructions</p>
+            <p class = "typec">
+              This game is simple. Just catch up with the button!
+            </p>
+    </div>
+
+    <script>
+
+      var button = document.getElementById("thisOne");
+
+      function regenerate() {
+        button.style.position = "absolute";
+        button.style.top = Math.floor(100+(Math.random()*400)) + "px";
+        button.style.left = Math.floor(100+(Math.random()*1000)) + "px";
+        //button.style.down = 500+(Math.random()*500) + "px";
+      }
+     
+
+    </script>
+
+  </body>
+
+</html>
