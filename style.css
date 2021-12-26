@@ -1,4 +1,5 @@
 /*index page*/
+/*index page*/
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inconsolata:wght@300&family=Satisfy&display=swap');
 
 .font1{
@@ -35,7 +36,6 @@ body {
 /* Position the navbar container inside the image */
 .topnav-container {
   /* The image used */
-  background-image: url("images/mountainBackground.png");
   color:black;
   min-height: 20px;
 
@@ -44,13 +44,14 @@ body {
   background-size: cover;
 
   /* Needed to position the navbar */
-  background-color: rgba(139,175,209,1);
+  background-color: #FAF9F6;
   position: fixed;
   /*margin: 20px;*/
   /*border-radius: 10px;*/
   /*height: 35px;*/
   width: 100%;
-  z-index: 1
+  z-index: 1;
+  border-bottom: 2px solid;
 }
 
 .topnav-container2 {
@@ -225,6 +226,7 @@ body {
   padding: 30px;
 }
 
+
 .options-container{
     background: argb(211, 211, 211,0);
     padding: 0px;
@@ -270,6 +272,55 @@ body {
 }
 
 /* solutions page*/
+
+.bg-basic{
+  background-color: #E8DED1;
+}
+
+.solutions-header{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 70px;
+  flex-flow: column;
+  text-align: center;
+  z-index: 0;
+  font-size: 150px;
+  text-shadow: 0 2px 7px #fcfcfc;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.solutions-subtitle{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 0px;
+  flex-flow: column;
+  text-align: center;
+  z-index: 0;
+  font-size: 30px;
+  color: #65350F;
+  text-shadow: 0 2px 7px #fcfcfc;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.solutions-divider{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 20px;
+  flex-flow: column;
+  text-align: center;
+  z-index: 0;
+  height: 0;
+  width: 30%;
+  margin-left: 35%;
+  color: #000000;
+  border-bottom: 2px solid;
+}
+
 .solutionspage-header{
   padding: 30px 50px;
   text-align: center;
@@ -288,61 +339,59 @@ body {
 } 
 .solution-buttons{
   background: none;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   flex-direction: row; 
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
   list-style-type: none;
-  gap:40px;
-  
+  gap: 10px;
 }
 
 .solution-button-link{
     float: left;
     display: block;
-    color: white;
-    background-color:black;
+    color: black;
+    background-color: #FAF9F6;
+    background-image: null;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
-    width: 300px;
+    width: 500px;
+    height: 300px;
+    margin: 5px;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-shadow: 0px 3px 8px 0px rgb(0 0 0 / 21%), 0px 5px 20px 0px rgb(0 0 0 / 20%);
-    transition: all 0.35s cubic-bezier(.24, .8, .24, 1);
-
-}
-.solution-button-link:hover{
-  opacity: .5;
+    /*transition: all 0.35s cubic-bezier(.24, .8, .24, 1);*/
+    border-radius: 10px;
+    /*transition: background-color 1s ease;*/
 }
 
-#short-term{
+#short-term:hover{
     background: linear-gradient(
       rgba(0, 0,0,0.25),
       rgba(0, 0, 0, 0.25)
     ), url(images/bluebackground.jpg) no-repeat;
     background-size: cover;
-    border-radius: 10px;
 }
-#long-term{
+#long-term:hover{
     background: linear-gradient(
       rgba(0, 0,0,0.25),
       rgba(0, 0, 0, 0.25)
     ), url(images/Meditation.jpg) no-repeat;
     background-size: cover;
-    border-radius: 10px;
 }
 
-#recommended-solutions{
+#recommended-solutions:hover{
     background: linear-gradient(
       rgba(0, 0,0,0.25),
       rgba(0, 0, 0, 0.25)
     ), url(images/calmbackground.png) no-repeat;
     background-size: cover;
-    border-radius: 10px;
 }
 
 
@@ -602,3 +651,4 @@ background: radial-gradient(circle, rgba(34,124,195,1) 70%, rgba(45,70,253,1) 10
 .question-blocks{
   margin-bottom: 50px;
 }
+
