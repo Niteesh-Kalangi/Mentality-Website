@@ -45,7 +45,7 @@ body {
 
   /* Needed to position the navbar */
   background-color: rgba(139,175,209,1);
-  position: fixed;
+  /*position: fixed;*/
   /*margin: 20px;*/
   /*border-radius: 10px;*/
   /*height: 35px;*/
@@ -65,7 +65,7 @@ body {
 
   /* Needed to position the navbar */
   background-color: rgba(139,175,209,0);
-  position: fixed;
+  /*position: fixed;*/
   /*margin: 20px;*/
   /*border-radius: 10px;*/
   /*height: 35px;*/
@@ -349,7 +349,7 @@ body {
 /*short-term-stress pages styling*/
 
 #myVideo {
-  position: fixed;
+  /*position: fixed;*/
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -601,4 +601,22 @@ background: radial-gradient(circle, rgba(34,124,195,1) 70%, rgba(45,70,253,1) 10
 
 .question-blocks{
   margin-bottom: 50px;
+}
+
+/* About section */
+
+.aboutsection{
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 50px;
+}
+.aboutsection h1{
+  font-size: 35PX;
+  color: #003f58;
+  margin-bottom: 40PX;
+  margin-top: 40PX;
+  font-style: bold;
+}
+.aboutsection p{
+  font-size: 30PX;
 }
